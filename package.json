@@ -1,20 +1,31 @@
 {
   "name": "electron-markdown-editor",
   "version": "1.0.0",
-  "description": "",
+  "description": "a markdown editor made with Electron and SimpleMDE",
   "main": "main.js",
   "scripts": {
-    "start": "electron .",
+    "start": "electron-forge start",
     "dev": "set DEBUG=true && electron .",
-    "unix:dev": "DEBUG=true  electron ."
+    "unix:dev": "DEBUG=true  electron .",
+    "package": "electron-forge package",
+    "make": "electron-forge make"
   },
   "dependencies": {
+    "electron-squirrel-startup": "^1.0.0",
+    "electron-updater": "^6.1.8",
     "simplemde": "^1.11.2"
   },
   "devDependencies": {
+    "@electron-forge/cli": "^7.3.1",
+    "@electron-forge/maker-deb": "^7.3.1",
+    "@electron-forge/maker-rpm": "^7.3.1",
+    "@electron-forge/maker-squirrel": "^7.3.1",
+    "@electron-forge/maker-zip": "^7.3.1",
+    "@electron-forge/plugin-auto-unpack-natives": "^7.3.1",
+    "@electron-forge/plugin-fuses": "^7.3.1",
     "electron": "^29.1.6"
   },
   "keywords": [],
-  "author": "",
+  "author": "qwas",
   "license": "MIT"
 }
