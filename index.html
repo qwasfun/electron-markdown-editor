@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self https://*'; script-src 'self,maxcdn.bootstrapcdn.com'"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Markdown Editor</title>
+
+    <link
+      rel="stylesheet"
+      href="./node_modules/simplemde/dist/simplemde.min.css"
+    />
+
+    <style>
+      html,
+      body {
+        height: 100%;
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+      }
+      .CodeMirror {
+        flex: 1;
+      }
+    </style>
+    <script src="./node_modules/simplemde/dist/simplemde.min.js"></script>
+  </head>
+  <body>
+    <textarea id="editor"></textarea>
+    <script src="./renderer.js"></script>
+  </body>
+</html>
